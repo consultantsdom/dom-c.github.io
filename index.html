@@ -72,12 +72,9 @@ h2{font-family:'Cormorant Garamond',serif;font-size:2.6rem;font-weight:400;lette
 
 /* INDUSTRIES */
 .industry-strip{border-top:0.5px solid var(--rule-dark);display:grid;grid-template-columns:repeat(5,1fr);}
-.industry-strip-label{display:none;}
-.industry-strip-items{display:contents;}
-.industry-strip-items .dot{display:none;}
-.industry-strip-items span:not(.dot){display:flex;align-items:center;justify-content:center;padding:1.5rem 1rem;font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:300;color:var(--muted-light);letter-spacing:0.08em;border-right:0.5px solid var(--rule-dark);text-align:center;transition:color 0.2s,background 0.2s;}
-.industry-strip-items span:not(.dot):last-child{border-right:none;}
-.industry-strip-items span:not(.dot):hover{color:var(--gold-light);background:var(--navy-light);}
+.industry-name-item{display:flex;align-items:center;justify-content:center;padding:1.5rem 1rem;font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:300;color:var(--muted-light);letter-spacing:0.08em;border-right:0.5px solid var(--rule-dark);text-align:center;transition:color 0.2s,background 0.2s;}
+.industry-name-item:last-child{border-right:none;}
+.industry-name-item:hover{color:var(--gold-light);background:var(--navy-light);}
 
 /* ABOUT */
 .about-section{background:var(--navy-mid);border-top:0.5px solid var(--rule-dark);display:grid;grid-template-columns:1fr 1fr;}
@@ -126,7 +123,7 @@ footer{background:var(--navy-mid);border-top:0.5px solid var(--rule-dark);paddin
   .pillar-card{border-right:none;border-bottom:0.5px solid var(--rule-dark);padding:2rem 1.75rem;}
   .pillar-card:last-child{border-bottom:none;}
   .industry-strip{grid-template-columns:repeat(2,1fr);}
-  .industry-strip-items span:not(.dot):nth-child(5){grid-column:span 2;}
+  .industry-name-item:nth-child(5){grid-column:span 2;}
   .about-section{grid-template-columns:1fr;}
   .about-stats{border-left:none;border-top:0.5px solid var(--rule-dark);padding:3rem 2rem;}
   .about-text{padding:3rem 2rem;}
@@ -194,18 +191,11 @@ footer{background:var(--navy-mid);border-top:0.5px solid var(--rule-dark);paddin
     </div>
   </div>
   <div class="industry-strip">
-    <span class="industry-strip-label">Industries Served</span>
-    <div class="industry-strip-items">
-      <span>Healthcare</span>
-      <span class="dot">·</span>
-      <span>Finance</span>
-      <span class="dot">·</span>
-      <span>Technology</span>
-      <span class="dot">·</span>
-      <span>Education</span>
-      <span class="dot">·</span>
-      <span>Insurance</span>
-    </div>
+    <span class="industry-name-item">Healthcare</span>
+    <span class="industry-name-item">Finance</span>
+    <span class="industry-name-item">Technology</span>
+    <span class="industry-name-item">Education</span>
+    <span class="industry-name-item">Insurance</span>
   </div>
 </section>
 
